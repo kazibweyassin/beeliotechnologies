@@ -1,0 +1,111 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 246 249 252;
+    --foreground: 10 42 67;
+    --card: 255 255 255;
+    --card-foreground: 10 42 67;
+    --border: 225 230 235;
+    --primary: 10 42 67;
+    --primary-foreground: 255 255 255;
+    --secondary: 0 194 168;
+    --secondary-foreground: 255 255 255;
+    --muted: 246 249 252;
+    --muted-foreground: 74 90 106;
+  }
+
+  .dark {
+    --background: 5 26 44;
+    --foreground: 246 249 252;
+    --card: 15 60 92;
+    --card-foreground: 246 249 252;
+    --border: 15 60 92;
+    --primary: 0 194 168;
+    --primary-foreground: 10 42 67;
+    --secondary: 0 143 124;
+    --secondary-foreground: 255 255 255;
+    --muted: 15 60 92;
+    --muted-foreground: 200 210 220;
+  }
+
+  body {
+    @apply bg-beelio-bg dark:bg-beelio-primaryDark text-beelio-text dark:text-beelio-bg;
+    font-family: var(--font-sora), system-ui, sans-serif;
+    font-feature-settings: "rlig" 1, "calt" 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    line-height: 1.7;
+    letter-spacing: -0.01em;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-sora), system-ui, sans-serif;
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+  }
+
+  h1 {
+    font-weight: 800;
+    letter-spacing: -0.03em;
+  }
+
+  h2 {
+    font-weight: 700;
+    letter-spacing: -0.025em;
+  }
+
+  h3 {
+    font-weight: 600;
+    letter-spacing: -0.02em;
+  }
+
+  /* Smooth scrolling */
+  html {
+    scroll-behavior: smooth;
+  }
+
+  /* Focus styles for accessibility */
+  *:focus-visible {
+    @apply outline-2 outline-offset-2 outline-beelio-accent;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .bg-grid-pattern {
+    background-image: 
+      linear-gradient(to right, rgba(10, 42, 67, 0.1) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(10, 42, 67, 0.1) 1px, transparent 1px);
+    background-size: 50px 50px;
+  }
+
+  /* Selection styles */
+  ::selection {
+    @apply bg-beelio-accent/30 text-beelio-primaryDark;
+  }
+
+  /* Scrollbar styles */
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  ::-webkit-scrollbar-track {
+    @apply bg-beelio-bg dark:bg-beelio-primaryDark;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    @apply bg-beelio-accent/50 rounded-full;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-beelio-accent;
+  }
+}
+
