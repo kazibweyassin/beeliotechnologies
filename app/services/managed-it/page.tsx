@@ -7,8 +7,9 @@ import Image from "next/image"
 import { CheckCircle, Server, Shield, Clock, HeadphonesIcon } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "Managed IT Services - Beelio Technologies",
-  description: "Comprehensive IT management and support services to keep your infrastructure running smoothly 24/7.",
+  title: "Managed IT Services Uganda | 24/7 Support & Monitoring",
+  description: "Professional managed IT services in Uganda. 24/7 monitoring, help desk support, network management, and proactive maintenance for your business infrastructure.",
+  keywords: "managed IT services Uganda, IT support Kampala, network monitoring Uganda, help desk services, IT maintenance",
 }
 
 const benefits = [

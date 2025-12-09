@@ -19,18 +19,26 @@ export const metadata: Metadata = {
     template: "%s | Beelio Technologies",
   },
   description:
-    "Beelio Technologies provides reliable IT infrastructure, security, and digital transformation for businesses across Africa. Expert managed IT services, cloud solutions, cybersecurity, and software development.",
+    "Beelio Technologies provides reliable IT infrastructure, security, and digital transformation for businesses across Africa. Expert managed IT services, cloud solutions, cybersecurity, software development, and government ICT procurement in Uganda and South Sudan.",
   keywords: [
-    "IT Services",
-    "Cloud Solutions",
-    "Cybersecurity",
-    "Software Development",
-    "Managed IT",
-    "IT Consultancy",
-    "Enterprise IT",
-    "Digital Transformation",
-    "Africa IT Solutions",
-    "IT Infrastructure",
+    "IT Services Uganda",
+    "Cloud Solutions Africa",
+    "Cybersecurity Uganda",
+    "Software Development East Africa",
+    "Managed IT Services Uganda",
+    "IT Consultancy Kampala",
+    "Enterprise IT Solutions",
+    "Digital Transformation Africa",
+    "Government ICT Procurement Uganda",
+    "Government Tenders ICT Uganda",
+    "ICT Equipment Supply South Sudan",
+    "IT Infrastructure Uganda",
+    "Government IT Supplier Uganda",
+    "Public Sector ICT Solutions",
+    "Beelio Technologies",
+    "IT Company Kampala",
+    "East Africa IT Services",
+    "Technology Solutions Uganda",
   ],
   authors: [{ name: "Beelio Technologies" }],
   creator: "Beelio Technologies",
@@ -81,8 +89,43 @@ export default function RootLayout({
 }: {
   children: React.ReactNode
 }) {
+  const jsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'Organization',
+    name: 'Beelio Technologies',
+    url: 'https://beelio.tech',
+    logo: 'https://beelio.tech/logo.png',
+    description: 'Enterprise IT Solutions, Cloud Infrastructure, Cybersecurity, and Government ICT Procurement in Uganda and South Sudan',
+    address: {
+      '@type': 'PostalAddress',
+      addressCountry: 'UG',
+      addressLocality: 'Kampala',
+    },
+    contactPoint: {
+      '@type': 'ContactPoint',
+      telephone: '+256-786-367460',
+      contactType: 'Customer Service',
+      email: 'beeliotechnologies@gmail.com',
+      areaServed: ['UG', 'SS'],
+    },
+    sameAs: [
+      'https://twitter.com/beeliotech',
+      'https://linkedin.com/company/beeliotech',
+    ],
+  }
+
   return (
     <html lang="en" suppressHydrationWarning>
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
+        <meta name="geo.region" content="UG" />
+        <meta name="geo.placename" content="Kampala" />
+        <meta name="geo.position" content="0.3476;32.5825" />
+        <meta name="ICBM" content="0.3476, 32.5825" />
+      </head>
       <body className={sora.variable}>
         <ThemeProvider>
           <Navbar />

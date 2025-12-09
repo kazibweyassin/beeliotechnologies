@@ -3,8 +3,9 @@ import SectionHeader from "@/components/SectionHeader"
 import ProductCard from "@/components/ProductCard"
 
 export const metadata: Metadata = {
-  title: "Products - Beelio Technologies",
-  description: "Enterprise IT products including hardware, software tools, and enterprise solutions.",
+  title: "IT Products & Solutions | Beelio Technologies Uganda",
+  description: "Explore our range of IT products and solutions. Enterprise hardware, software, networking equipment, and technology products for businesses in Uganda and East Africa.",
+  keywords: "IT products Uganda, technology solutions, enterprise hardware, software products Kampala",
 }
 
 const products = [

@@ -6,8 +6,9 @@ import Button from "@/components/Button"
 import { CheckCircle, Code, Smartphone, Globe, Zap } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "Software Development - Beelio Technologies",
-  description: "Custom software solutions tailored to your business needs, from web apps to enterprise systems.",
+  title: "Custom Software Development Uganda | Web & Enterprise Applications",
+  description: "Professional software development services in Uganda. Custom web applications, mobile apps, and enterprise systems built with modern technologies and best practices.",
+  keywords: "software development Uganda, custom software Kampala, web development East Africa, mobile app development Uganda",
 }
 
 const benefits = [

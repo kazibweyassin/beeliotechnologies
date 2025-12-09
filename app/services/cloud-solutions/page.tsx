@@ -7,8 +7,9 @@ import Image from "next/image"
 import { CheckCircle, Cloud, Zap, Shield, TrendingUp } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "Cloud Solutions - Beelio Technologies",
-  description: "Scalable cloud infrastructure and migration services to modernize your business operations.",
+  title: "Cloud Solutions Uganda | AWS, Azure & Cloud Migration Services",
+  description: "Expert cloud infrastructure and migration services in Uganda. AWS, Azure, Google Cloud solutions for scalable, secure business operations across East Africa.",
+  keywords: "cloud solutions Uganda, AWS Uganda, Azure East Africa, cloud migration, cloud infrastructure Kampala",
 }
 
 const benefits = [

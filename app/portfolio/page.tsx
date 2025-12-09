@@ -6,8 +6,9 @@ import Image from "next/image"
 import { ArrowRight, TrendingUp, Shield, Building2 } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "Portfolio - Beelio Technologies",
-  description: "Explore our successful projects and case studies showcasing our expertise in IT solutions.",
+  title: "Our Portfolio & Case Studies | Beelio Technologies",
+  description: "Explore successful IT projects and case studies from Beelio Technologies. Government projects, enterprise implementations, and digital transformation success stories.",
+  keywords: "IT portfolio Uganda, case studies, project showcase, government IT projects Uganda",
 }
 
 const caseStudies = [

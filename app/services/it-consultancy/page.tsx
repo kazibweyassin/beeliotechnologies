@@ -6,8 +6,9 @@ import Button from "@/components/Button"
 import { CheckCircle, Briefcase, Target, TrendingUp, Lightbulb } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "IT Consultancy - Beelio Technologies",
-  description: "Strategic IT consulting to help you make informed decisions and optimize your technology investments.",
+  title: "IT Consultancy Services Uganda | Strategic Technology Planning",
+  description: "Expert IT consulting in Uganda. Strategic technology planning, digital transformation, and IT investment optimization for businesses across East Africa.",
+  keywords: "IT consultancy Uganda, technology consulting Kampala, IT strategy, digital transformation Uganda",
 }
 
 const benefits = [

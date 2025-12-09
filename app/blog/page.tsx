@@ -5,8 +5,9 @@ import Link from "next/link"
 import { Calendar, ArrowRight } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "Blog - Beelio Technologies",
-  description: "Latest insights, news, and articles about IT solutions, technology trends, and digital transformation.",
+  title: "IT Insights & Technology Blog | Beelio Technologies",
+  description: "Stay updated with the latest IT trends, technology insights, and industry news from Beelio Technologies. Expert perspectives on cloud, cybersecurity, and digital transformation.",
+  keywords: "IT blog Uganda, technology insights, cybersecurity news, cloud computing Africa, IT trends East Africa",
 }
 
 const blogPosts = [

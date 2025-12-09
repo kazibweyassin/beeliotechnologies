@@ -7,8 +7,9 @@ import Image from "next/image"
 import { CheckCircle, Shield, Lock, Eye, AlertTriangle } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "Cybersecurity Services - Beelio Technologies",
-  description: "Advanced security solutions to protect your business from threats and ensure compliance.",
+  title: "Cybersecurity Services Uganda | Threat Protection & Compliance",
+  description: "Advanced cybersecurity solutions for Uganda businesses. Multi-layered defense, threat detection, compliance consulting, and security audits for complete protection.",
+  keywords: "cybersecurity Uganda, security services Kampala, threat protection, compliance Uganda, security audit East Africa",
 }
 
 const benefits = [
