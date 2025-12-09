@@ -282,10 +282,10 @@ export default function EnhancedFooter() {
                 <h4 className="font-bold text-white">Call Us</h4>
               </div>
               <a
-                href="tel:+256700000000"
+                href="tel:+256786367460"
                 className="text-beelio-lightGray hover:text-beelio-accent transition-colors text-sm block"
               >
-                +256 700 000 000
+                +256 786 367460
               </a>
               <p className="text-beelio-lightGray/60 text-xs mt-1">24/7 Support Available</p>
             </div>
@@ -296,10 +296,10 @@ export default function EnhancedFooter() {
                 <h4 className="font-bold text-white">Email Us</h4>
               </div>
               <a
-                href="mailto:info@beelio.tech"
+                href="mailto:beeliotechnologies@gmail.com"
                 className="text-beelio-lightGray hover:text-beelio-accent transition-colors text-sm block break-all"
               >
-                info@beelio.tech
+                beeliotechnologies@gmail.com
               </a>
               <p className="text-beelio-lightGray/60 text-xs mt-1">We reply within 24hrs</p>
             </div>

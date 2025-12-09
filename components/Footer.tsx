@@ -123,19 +123,19 @@ export default function Footer() {
               <li className="flex items-center space-x-3">
                 <Phone className="w-5 h-5 text-beelio-accent flex-shrink-0" />
                 <a
-                  href="tel:+256700000000"
+                  href="tel:+256786367460"
                   className="text-beelio-bg/80 hover:text-beelio-accent transition-colors text-sm"
                 >
-                  +256 700 000 000
+                  +256 786 367460
                 </a>
               </li>
               <li className="flex items-center space-x-3">
                 <Mail className="w-5 h-5 text-beelio-accent flex-shrink-0" />
                 <a
-                  href="mailto:info@beelio.tech"
+                  href="mailto:beeliotechnologies@gmail.com"
                   className="text-beelio-bg/80 hover:text-beelio-accent transition-colors text-sm"
                 >
-                  info@beelio.tech
+                  beeliotechnologies@gmail.com
                 </a>
               </li>
             </ul>

@@ -65,10 +65,10 @@ export default function ContactPage() {
                   <div>
                     <h3 className="font-semibold text-beelio-primary dark:text-beelio-bg mb-1">Phone</h3>
                     <a
-                      href="tel:+256700000000"
+                      href="tel:+256786367460"
                       className="text-beelio-textSecondary dark:text-beelio-bg/80 hover:text-beelio-accent transition-colors"
                     >
-                      +256 700 000 000
+                      +256 786 367460
                     </a>
                   </div>
                 </div>
@@ -79,10 +79,10 @@ export default function ContactPage() {
                   <div>
                     <h3 className="font-semibold text-beelio-primary dark:text-beelio-bg mb-1">Email</h3>
                     <a
-                      href="mailto:info@beelio.tech"
+                      href="mailto:beeliotechnologies@gmail.com"
                       className="text-beelio-textSecondary dark:text-beelio-bg/80 hover:text-beelio-accent transition-colors"
                     >
-                      info@beelio.tech
+                      beeliotechnologies@gmail.com
                     </a>
                   </div>
                 </div>

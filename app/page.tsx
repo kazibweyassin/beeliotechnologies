@@ -2,6 +2,7 @@ import Hero from "@/components/Hero"
 import CompanyIntro from "@/components/CompanyIntro"
 import ServicesOverview from "@/components/ServicesOverview"
 import CompanyImpact from "@/components/CompanyImpact"
+import GovernmentSolutions from "@/components/GovernmentSolutions"
 import IndustriesWeDominate from "@/components/IndustriesWeDominate"
 import WhyChooseBeelio from "@/components/WhyChooseBeelio"
 import CaseStudiesHighlight from "@/components/CaseStudiesHighlight"
@@ -16,6 +17,7 @@ export default function Home() {
       <Hero />
       <CompanyIntro />
       <ServicesOverview />
+      <GovernmentSolutions />
       <CompanyImpact />
       <IndustriesWeDominate />
       <WhyChooseBeelio />

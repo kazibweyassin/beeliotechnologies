@@ -8,6 +8,7 @@ import {
   Shield,
   Briefcase,
   Code,
+  Building2,
 } from "lucide-react"
 
 const services = [
@@ -45,6 +46,14 @@ const services = [
       "Custom software solutions tailored to your business needs, from web apps to enterprise systems. Built with modern technologies and best practices.",
     icon: Code,
     href: "/services/software-development",
+  },
+  {
+    title: "Government ICT Procurement",
+    description:
+      "Authorized supplier for government tenders, bids, and ICT equipment supply to public sector organizations in Uganda and South Sudan.",
+    icon: Building2,
+    href: "/contact",
+    tag: "Government & Public Sector"
   },
 ]
 
