@@ -129,7 +129,7 @@ export default function CompanyImpact() {
               Our Quality Policy
             </h3>
             <p className="text-lg max-w-3xl mx-auto leading-relaxed">
-              Beelio Technologies shall deliver ICT Solutions that add value to our customer's 
+              Beelio Technologies shall deliver ICT Solutions that add value to our customer&apos;s 
               operations, meet and exceed expectations, and deliver them right first time, every time.
             </p>
           </div>

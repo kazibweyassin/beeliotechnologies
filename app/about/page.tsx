@@ -476,7 +476,7 @@ export default function AboutPage() {
               </motion.div>
               <h3 className="text-2xl font-bold text-beelio-primary dark:text-white mb-4">Our Vision</h3>
               <p className="text-beelio-textSecondary dark:text-beelio-lightGray leading-relaxed">
-                To become Africa's leading IT solutions provider, recognized for excellence, innovation, 
+                To become Africa&apos;s leading IT solutions provider, recognized for excellence, innovation, 
                 and transformative impact on businesses and communities.
               </p>
             </motion.div>
@@ -500,7 +500,7 @@ export default function AboutPage() {
               <h3 className="text-2xl font-bold text-beelio-primary dark:text-white mb-4">Our Values</h3>
               <p className="text-beelio-textSecondary dark:text-beelio-lightGray leading-relaxed">
                 Integrity, excellence, innovation, and customer-centricity guide everything we do. 
-                We're committed to delivering value and building lasting partnerships.
+                We&apos;re committed to delivering value and building lasting partnerships.
               </p>
             </motion.div>
           </div>
