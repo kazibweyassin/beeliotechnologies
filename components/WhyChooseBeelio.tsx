@@ -73,7 +73,7 @@ export default function WhyChooseBeelio() {
                 >
                   <Icon className="w-8 h-8 text-beelio-accent" />
                 </motion.div>
-                <h3 className="text-2xl font-bold text-beelio-primary dark:text-beelio-bg mb-3">
+                <h3 className="text-xl font-bold text-beelio-primary dark:text-beelio-bg mb-3">
                   {value.title}
                 </h3>
                 <p className="text-beelio-textSecondary dark:text-beelio-bg/80 leading-relaxed">

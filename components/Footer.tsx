@@ -71,7 +71,7 @@ export default function Footer() {
 
           {/* Services */}
           <div>
-            <h3 className="font-semibold text-lg mb-4 tracking-tight">Services</h3>
+            <h3 className="font-semibold text-lg mb-4 tracking-tight">Solutions</h3>
             <ul className="space-y-2">
               {footerLinks.services.map((link, i) => (
                 <motion.li

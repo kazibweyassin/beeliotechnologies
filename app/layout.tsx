@@ -2,7 +2,7 @@ import type { Metadata } from "next"
 import { Sora } from "next/font/google"
 import "./globals.css"
 import Navbar from "@/components/Navbar"
-import Footer from "@/components/Footer"
+import EnhancedFooter from "@/components/EnhancedFooter"
 import { ThemeProvider } from "@/components/ThemeProvider"
 
 const sora = Sora({
@@ -87,7 +87,7 @@ export default function RootLayout({
         <ThemeProvider>
           <Navbar />
           <main className="min-h-screen">{children}</main>
-          <Footer />
+          <EnhancedFooter />
         </ThemeProvider>
       </body>
     </html>

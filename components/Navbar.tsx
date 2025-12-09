@@ -13,17 +13,17 @@ import Button from "./Button"
 const navLinks = [
   { name: "Home", href: "/" },
   { name: "About Us", href: "/about" },
-  {
-    name: "Services",
-    href: "/services",
-    submenu: [
-      { name: "Managed IT Services", href: "/services/managed-it" },
-      { name: "Cloud Solutions", href: "/services/cloud-solutions" },
-      { name: "Cybersecurity", href: "/services/cybersecurity" },
-      { name: "IT Consultancy", href: "/services/it-consultancy" },
-      { name: "Software Development", href: "/services/software-development" },
-    ],
-  },
+    {
+      name: "Solutions",
+      href: "/services",
+      submenu: [
+        { name: "Managed IT Services", href: "/services/managed-it" },
+        { name: "Cloud Solutions", href: "/services/cloud-solutions" },
+        { name: "Cybersecurity", href: "/services/cybersecurity" },
+        { name: "IT Consultancy", href: "/services/it-consultancy" },
+        { name: "Software Development", href: "/services/software-development" },
+      ],
+    },
   { name: "Products", href: "/products" },
   { name: "Portfolio", href: "/portfolio" },
   { name: "Blog", href: "/blog" },
@@ -89,10 +89,12 @@ export default function Navbar() {
                     <Link
                       href={link.href}
                       className={cn(
-                        "text-sm font-semibold transition-all duration-300 relative group",
+                        "text-sm font-normal transition-all duration-300 relative group",
                         pathname.startsWith(link.href)
                           ? "text-beelio-accent"
-                          : "text-beelio-text dark:text-beelio-bg hover:text-beelio-accent"
+                          : isScrolled
+                            ? "text-beelio-text dark:text-beelio-bg hover:text-beelio-accent"
+                            : "text-white hover:text-beelio-accent"
                       )}
                     >
                       {link.name}
@@ -103,7 +105,10 @@ export default function Navbar() {
                         )}
                       />
                     </Link>
-                    <ChevronDown className="w-4 h-4" />
+                    <ChevronDown className={cn(
+                      "w-4 h-4 transition-colors",
+                      isScrolled ? "text-beelio-text dark:text-beelio-bg" : "text-white"
+                    )} />
                     <AnimatePresence>
                       {openSubmenu === link.name && (
                         <motion.div
@@ -129,10 +134,12 @@ export default function Navbar() {
                   <Link
                     href={link.href}
                     className={cn(
-                      "text-sm font-medium transition-colors hover:text-beelio-accent",
+                      "text-sm font-normal transition-colors hover:text-beelio-accent",
                       pathname === link.href
                         ? "text-beelio-accent"
-                        : "text-beelio-text dark:text-beelio-bg"
+                        : isScrolled
+                          ? "text-beelio-text dark:text-beelio-bg"
+                          : "text-white"
                     )}
                   >
                     {link.name}
@@ -197,7 +204,7 @@ export default function Navbar() {
                         }
                         className="flex items-center justify-between w-full text-left py-2"
                       >
-                        <span className="font-medium">{link.name}</span>
+                        <span className="font-normal">{link.name}</span>
                         <ChevronDown
                           className={cn(
                             "w-4 h-4 transition-transform",
@@ -231,7 +238,7 @@ export default function Navbar() {
                     <Link
                       href={link.href}
                       onClick={() => setIsMobileMenuOpen(false)}
-                      className="block py-2 font-medium"
+                      className="block py-2 font-normal"
                     >
                       {link.name}
                     </Link>

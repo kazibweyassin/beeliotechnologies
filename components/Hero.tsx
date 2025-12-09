@@ -4,7 +4,7 @@ import { motion, AnimatePresence } from "framer-motion"
 import { useState, useEffect } from "react"
 import Button from "./Button"
 import Image from "next/image"
-import { ArrowRight, Play, Volume2, ChevronRight } from "lucide-react"
+import { ArrowRight, Play, Volume2 } from "lucide-react"
 
 const heroImages = [
   "/hero_banner_72c5560d49.png",
@@ -66,7 +66,7 @@ export default function Hero() {
       </div>
 
       {/* Content Container */}
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10 min-h-screen flex flex-col">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10 min-h-screen flex flex-col pt-24 md:pt-32">
         <div className="flex-1 flex items-center">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 w-full items-center">
             {/* Left Side - Headline */}
@@ -80,31 +80,31 @@ export default function Hero() {
                 initial={{ opacity: 0, y: 30 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.4 }}
-                className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-extrabold leading-[1.1] tracking-tight mb-6"
+                className="text-2xl md:text-3xl lg:text-4xl font-bold leading-[1.2] tracking-tight mb-6"
               >
                 <motion.span
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.6, delay: 0.5 }}
-                  className="block"
+                  className="inline-block"
                 >
-                  We Are Empowering
+                  We Are Positioning{" "}
                 </motion.span>
                 <motion.span
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.6, delay: 0.7 }}
-                  className="block"
+                  className="inline-block"
                 >
-                  Africa with
+                  Africa to Maximize{" "}
                 </motion.span>
                 <motion.span
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.6, delay: 0.9 }}
-                  className="block bg-gradient-to-r from-beelio-accent to-beelio-accentDark bg-clip-text text-transparent"
+                  className="inline-block bg-gradient-to-r from-beelio-accent to-beelio-accentDark bg-clip-text text-transparent"
                 >
-                  Enterprise IT Solutions
+                  the Future
                 </motion.span>
               </motion.h1>
 
@@ -112,7 +112,7 @@ export default function Hero() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 1.1 }}
-                className="text-lg md:text-xl text-white/90 mb-10 max-w-xl leading-relaxed"
+                className="text-base md:text-lg text-white/90 mb-10 max-w-xl leading-relaxed"
               >
                 We have over two decades of immense contribution to the
                 Information Communication & Technology Sector across Africa.
@@ -137,7 +137,7 @@ export default function Hero() {
                   variant="outline"
                   className="border-white/30 text-white hover:bg-white/10 hover:border-white/50"
                 >
-                  Explore Services
+                  Explore Solutions
                 </Button>
               </motion.div>
             </motion.div>
@@ -271,23 +271,6 @@ export default function Hero() {
         ))}
       </div>
 
-      {/* Previous/Next Buttons */}
-      <button
-        onClick={() =>
-          setCurrentSlide((prev) => (prev - 1 + heroImages.length) % heroImages.length)
-        }
-        className="absolute left-4 top-1/2 -translate-y-1/2 w-12 h-12 bg-white/10 hover:bg-white/20 backdrop-blur-md rounded-full flex items-center justify-center text-white transition-all z-20 hidden lg:flex"
-        aria-label="Previous slide"
-      >
-        <ChevronRight className="w-6 h-6 rotate-180" />
-      </button>
-      <button
-        onClick={() => setCurrentSlide((prev) => (prev + 1) % heroImages.length)}
-        className="absolute right-4 top-1/2 -translate-y-1/2 w-12 h-12 bg-white/10 hover:bg-white/20 backdrop-blur-md rounded-full flex items-center justify-center text-white transition-all z-20 hidden lg:flex"
-        aria-label="Next slide"
-      >
-        <ChevronRight className="w-6 h-6" />
-      </button>
     </section>
   )
 }

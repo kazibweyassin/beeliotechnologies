@@ -70,7 +70,7 @@ export default function CloudSolutionsPage() {
         </div>
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="max-w-3xl mx-auto text-center">
-            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-beelio-primary dark:text-beelio-bg mb-6">
+            <h1 className="text-xl md:text-2xl lg:text-3xl font-bold text-beelio-primary dark:text-beelio-bg mb-6">
               Cloud Solutions
             </h1>
             <p className="text-xl text-beelio-textSecondary dark:text-beelio-bg/80">
@@ -84,7 +84,7 @@ export default function CloudSolutionsPage() {
       <section className="py-20 bg-beelio-surface dark:bg-beelio-primaryDark">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl font-bold text-beelio-primary dark:text-beelio-bg mb-6">Overview</h2>
+            <h2 className="text-xl font-bold text-beelio-primary dark:text-beelio-bg mb-6">Overview</h2>
             <p className="text-lg text-beelio-textSecondary dark:text-beelio-bg/80 mb-4">
               Transform your business with our comprehensive cloud solutions. We help organizations migrate 
               to the cloud, optimize existing cloud infrastructure, and leverage cloud-native technologies 
@@ -125,7 +125,7 @@ export default function CloudSolutionsPage() {
       <section className="py-20 bg-beelio-surface dark:bg-beelio-primaryDark">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl font-bold text-beelio-primary dark:text-beelio-bg mb-8">Our Cloud Services</h2>
+            <h2 className="text-xl font-bold text-beelio-primary dark:text-beelio-bg mb-8">Our Cloud Services</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               {services.map((service, i) => (
                 <div key={i} className="flex items-start space-x-3">
@@ -141,7 +141,7 @@ export default function CloudSolutionsPage() {
       <section className="py-20 bg-beelio-bg dark:bg-beelio-primary">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl font-bold text-beelio-primary dark:text-beelio-bg mb-8">Technologies We Use</h2>
+            <h2 className="text-xl font-bold text-beelio-primary dark:text-beelio-bg mb-8">Technologies We Use</h2>
             <div className="flex flex-wrap gap-3">
               {technologies.map((tech, i) => (
                 <span
@@ -204,7 +204,7 @@ export default function CloudSolutionsPage() {
       <section className="py-20 bg-beelio-bg dark:bg-beelio-primary">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl font-bold text-beelio-primary dark:text-beelio-bg mb-8">Frequently Asked Questions</h2>
+            <h2 className="text-xl font-bold text-beelio-primary dark:text-beelio-bg mb-8">Frequently Asked Questions</h2>
             <div className="space-y-6">
               {[
                 {

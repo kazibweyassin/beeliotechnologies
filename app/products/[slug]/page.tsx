@@ -29,7 +29,7 @@ export default async function ProductDetailPage({ params }: { params: Promise<{ 
                 />
               </div>
               <div>
-                <h1 className="text-3xl md:text-4xl font-bold text-beelio-primary dark:text-beelio-bg mb-4">
+                <h1 className="text-xl md:text-2xl font-bold text-beelio-primary dark:text-beelio-bg mb-4">
                   {productName}
                 </h1>
                 <p className="text-lg text-beelio-textSecondary dark:text-beelio-bg/80 mb-6">
@@ -48,7 +48,7 @@ export default async function ProductDetailPage({ params }: { params: Promise<{ 
       <section className="py-20 bg-beelio-surface dark:bg-beelio-primaryDark">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl font-bold text-beelio-primary dark:text-beelio-bg mb-6">Description</h2>
+            <h2 className="text-xl font-bold text-beelio-primary dark:text-beelio-bg mb-6">Description</h2>
             <p className="text-beelio-textSecondary dark:text-beelio-bg/80 mb-4">
               This enterprise solution provides comprehensive features designed to meet the demanding 
               requirements of modern businesses. Built with cutting-edge technology and industry best practices.
@@ -65,7 +65,7 @@ export default async function ProductDetailPage({ params }: { params: Promise<{ 
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-4xl mx-auto">
             <Card>
-              <h2 className="text-3xl font-bold text-beelio-primary dark:text-beelio-bg mb-6">Specifications</h2>
+              <h2 className="text-xl font-bold text-beelio-primary dark:text-beelio-bg mb-6">Specifications</h2>
               <div className="overflow-x-auto">
                 <table className="w-full">
                   <tbody className="divide-y divide-beelio-border">

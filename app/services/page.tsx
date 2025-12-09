@@ -54,10 +54,10 @@ export default function ServicesPage() {
       <section className="pt-32 pb-20 bg-gradient-to-br from-beelio-bg to-beelio-surface dark:from-beelio-primaryDark dark:to-beelio-primary">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl mx-auto text-center">
-            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-beelio-primary dark:text-beelio-bg mb-6">
-              Our Services
+            <h1 className="text-xl md:text-2xl lg:text-3xl font-bold text-beelio-primary dark:text-beelio-bg mb-6">
+              Our Solutions
             </h1>
-            <p className="text-xl text-beelio-textSecondary dark:text-beelio-bg/80">
+            <p className="text-sm md:text-base text-beelio-textSecondary dark:text-beelio-bg/80">
               Comprehensive IT solutions designed to drive your business forward.
               From infrastructure management to custom software development.
             </p>
@@ -69,7 +69,7 @@ export default function ServicesPage() {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <SectionHeader
             title="What We Offer"
-            description="Choose from our range of enterprise-grade IT services"
+            description="Choose from our range of enterprise-grade IT solutions"
             centered
           />
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">

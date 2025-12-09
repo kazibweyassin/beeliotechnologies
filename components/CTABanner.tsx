@@ -45,7 +45,7 @@ export default function CTABanner({
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.2 }}
-            className="text-3xl md:text-4xl lg:text-5xl font-extrabold text-white mb-6 leading-tight tracking-tight"
+            className="text-xl md:text-2xl lg:text-3xl font-extrabold text-white mb-6 leading-tight tracking-tight"
           >
             {title}
           </motion.h2>
@@ -55,7 +55,7 @@ export default function CTABanner({
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: 0.3 }}
-              className="text-white/95 text-xl md:text-2xl mb-10 leading-relaxed font-normal"
+              className="text-white/95 text-sm md:text-base mb-10 leading-relaxed font-normal"
             >
               {description}
             </motion.p>

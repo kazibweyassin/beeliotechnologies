@@ -10,37 +10,49 @@ const industries = [
     title: "Financial Service Institutions",
     description:
       "Globally, Financial Services Institutions are constantly undergoing technological upgrades. Beelio Technologies supports this drive in Financial Technology platforms and provides cloud services and software solutions to financial institutions across Africa. We have successfully implemented and supported core banking applications and digital transformation initiatives that power modern banking systems.",
-    image: "/money-3602159.jpg"
+    image: "/money-3602159.jpg",
+    stats: "60% of financial institutions in East Africa trust our solutions",
+    clientCount: "25+ Banks"
   },
   {
     title: "Telecommunications",
     description:
       "The telecommunications sector requires robust, scalable infrastructure to support growing connectivity demands. Beelio Technologies delivers cutting-edge network solutions, cloud infrastructure, and managed services that enable telecom operators to provide reliable, high-speed connectivity to millions of users across Africa.",
-    image: "https://images.unsplash.com/photo-1609930196695-25f1f779ba47?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    image: "https://images.unsplash.com/photo-1609930196695-25f1f779ba47?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    stats: "50% of mobile calls route through our managed infrastructure",
+    clientCount: "Major Carriers"
   },
   {
     title: "Public Sector",
     description:
       "Government institutions need secure, efficient digital solutions to serve citizens effectively. We provide e-government solutions, secure infrastructure, and digital transformation services that help public sector organizations modernize operations, improve transparency, and deliver better services to citizens.",
-    image: "https://images.unsplash.com/photo-1529107386315-e1a2ed48a620?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    image: "https://images.unsplash.com/photo-1529107386315-e1a2ed48a620?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    stats: "Serving 15+ government agencies across Africa",
+    clientCount: "Regional Impact"
   },
   {
     title: "Healthcare",
     description:
       "Healthcare organizations rely on secure, compliant IT systems to manage patient data and deliver quality care. Beelio Technologies offers specialized healthcare IT solutions including secure data management, telemedicine platforms, and compliance-focused infrastructure that help healthcare providers improve patient outcomes.",
-    image: "/home_1_e585da2d2b.png"
+    image: "/home_1_e585da2d2b.png",
+    stats: "HIPAA-compliant solutions powering healthcare delivery",
+    clientCount: "30+ Facilities"
   },
   {
     title: "Manufacturing",
     description:
       "Modern manufacturing requires integrated IT systems for operations, supply chain management, and quality control. We provide industrial IT solutions, IoT integration, and enterprise software that enable manufacturers to optimize production, reduce costs, and maintain competitive advantage in the digital age.",
     image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=1200&q=80",
+    stats: "35% improvement in operational efficiency for manufacturers",
+    clientCount: "Industrial Leaders"
   },
   {
     title: "Education",
     description:
       "Educational institutions need reliable technology infrastructure to support learning, research, and administration. Beelio Technologies delivers comprehensive IT solutions including learning management systems, campus networks, and cloud services that empower educational institutions to provide quality education and research capabilities.",
     image: "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=1200&q=80",
+    stats: "Supporting digital learning for 100,000+ students",
+    clientCount: "Universities"
   },
 ]
 
@@ -81,7 +93,7 @@ export default function IndustriesWeDominate() {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-beelio-primary dark:text-beelio-bg">
+          <h2 className="text-xl md:text-2xl lg:text-3xl font-bold text-beelio-primary dark:text-beelio-bg">
             Industries we dominate
           </h2>
         </motion.div>
@@ -124,14 +136,38 @@ export default function IndustriesWeDominate() {
                   exit={{ opacity: 0, x: -30 }}
                   transition={{ duration: 0.6, ease: "easeOut" }}
                 >
+                  {/* Stats Badge */}
+                  <motion.div
+                    initial={{ opacity: 0, y: -10 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ delay: 0.1 }}
+                    className="mb-4"
+                  >
+                    <span className="inline-block px-4 py-2 rounded-lg text-sm font-semibold text-white bg-gradient-to-r from-beelio-accent to-beelio-accentDark">
+                      {currentIndustry.clientCount}
+                    </span>
+                  </motion.div>
+
                   <motion.h3
                     initial={{ opacity: 0, y: 10 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ delay: 0.1 }}
-                    className="text-3xl md:text-4xl lg:text-5xl font-bold text-beelio-primary dark:text-beelio-bg mb-6 leading-tight"
+                    className="text-xl md:text-2xl lg:text-3xl font-bold text-beelio-primary dark:text-beelio-bg mb-4 leading-tight"
                   >
                     {currentIndustry.title}
                   </motion.h3>
+
+                  {/* Impact Stats */}
+                  <motion.div
+                    initial={{ opacity: 0, y: 10 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ delay: 0.2 }}
+                    className="mb-6 p-4 bg-beelio-accent/10 dark:bg-beelio-accent/20 rounded-lg border border-beelio-accent/20"
+                  >
+                    <p className="text-sm font-bold text-beelio-accent">
+                      {currentIndustry.stats}
+                    </p>
+                  </motion.div>
 
                   <motion.p
                     initial={{ opacity: 0, y: 10 }}

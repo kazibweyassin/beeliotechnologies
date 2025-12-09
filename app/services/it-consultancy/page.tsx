@@ -52,7 +52,7 @@ export default function ITConsultancyPage() {
       <section className="pt-32 pb-20 bg-gradient-to-br from-beelio-bg to-beelio-surface dark:from-beelio-primaryDark dark:to-beelio-primary">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl mx-auto text-center">
-            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-beelio-primary dark:text-beelio-bg mb-6">
+            <h1 className="text-xl md:text-2xl lg:text-3xl font-bold text-beelio-primary dark:text-beelio-bg mb-6">
               IT Consultancy
             </h1>
             <p className="text-xl text-beelio-textSecondary dark:text-beelio-bg/80">
@@ -66,7 +66,7 @@ export default function ITConsultancyPage() {
       <section className="py-20 bg-beelio-surface dark:bg-beelio-primaryDark">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl font-bold text-beelio-primary dark:text-beelio-bg mb-6">Overview</h2>
+            <h2 className="text-xl font-bold text-beelio-primary dark:text-beelio-bg mb-6">Overview</h2>
             <p className="text-lg text-beelio-textSecondary dark:text-beelio-bg/80 mb-4">
               Making the right technology decisions is critical for business success. Our IT consultancy services 
               provide the strategic guidance and expert insights you need to navigate complex technology choices 
@@ -107,7 +107,7 @@ export default function ITConsultancyPage() {
       <section className="py-20 bg-beelio-surface dark:bg-beelio-primaryDark">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl font-bold text-beelio-primary dark:text-beelio-bg mb-8">Our Consulting Services</h2>
+            <h2 className="text-xl font-bold text-beelio-primary dark:text-beelio-bg mb-8">Our Consulting Services</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               {services.map((service, i) => (
                 <div key={i} className="flex items-start space-x-3">
@@ -168,7 +168,7 @@ export default function ITConsultancyPage() {
       <section className="py-20 bg-beelio-surface dark:bg-beelio-primaryDark">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl font-bold text-beelio-primary dark:text-beelio-bg mb-8">Frequently Asked Questions</h2>
+            <h2 className="text-xl font-bold text-beelio-primary dark:text-beelio-bg mb-8">Frequently Asked Questions</h2>
             <div className="space-y-6">
               {[
                 {

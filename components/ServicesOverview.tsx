@@ -22,6 +22,8 @@ const services = [
     icon: Server,
     href: "/services/managed-it",
     image: "/Technical-Support-Consulting-cybersecurite.jpg",
+    tag: "24/7 Support",
+    tagColor: "from-purple-500 to-pink-500",
   },
   {
     title: "Cloud Solutions",
@@ -31,6 +33,8 @@ const services = [
     icon: Cloud,
     href: "/services/cloud-solutions",
     image: "/Cloud-services.jpg",
+    tag: "Enterprise Ready",
+    tagColor: "from-blue-500 to-cyan-500",
   },
   {
     title: "Cybersecurity",
@@ -40,6 +44,8 @@ const services = [
     icon: Shield,
     href: "/services/cybersecurity",
     image: "/Security-Services.jpg",
+    tag: "ISO Certified",
+    tagColor: "from-red-500 to-orange-500",
   },
   {
     title: "IT Consultancy",
@@ -49,6 +55,8 @@ const services = [
     icon: Briefcase,
     href: "/services/it-consultancy",
     image: "/Networking-Services-data-cabling-1024x696-1.jpg",
+    tag: "Expert Advisory",
+    tagColor: "from-amber-500 to-yellow-500",
   },
   {
     title: "Software Development",
@@ -58,6 +66,8 @@ const services = [
     icon: Code,
     href: "/services/software-development",
     image: "/services-title-image.jpg",
+    tag: "Custom Solutions",
+    tagColor: "from-green-500 to-emerald-500",
   },
 ]
 
@@ -99,9 +109,9 @@ export default function ServicesOverview() {
         <div className="max-w-7xl mx-auto">
           {/* Service Slideshow */}
           <div className="bg-white dark:bg-beelio-primary rounded-2xl md:rounded-3xl overflow-hidden shadow-2xl">
-            <div className="grid grid-cols-1 lg:grid-cols-2 min-h-[500px] md:min-h-[600px]">
+            <div className="grid grid-cols-1 lg:grid-cols-2 min-h-[400px] md:min-h-[450px]">
               {/* Left Side - Image */}
-              <div className="relative h-[300px] md:h-[400px] lg:h-full order-2 lg:order-1">
+              <div className="relative h-[250px] md:h-[300px] lg:h-full order-2 lg:order-1">
                 <AnimatePresence mode="wait">
                   <motion.div
                     key={currentIndex}
@@ -124,7 +134,7 @@ export default function ServicesOverview() {
               </div>
 
               {/* Right Side - Content */}
-              <div className="flex flex-col justify-center p-8 md:p-12 lg:p-16 order-1 lg:order-2">
+              <div className="flex flex-col justify-center p-6 md:p-8 lg:p-10 order-1 lg:order-2">
                 <AnimatePresence mode="wait">
                   <motion.div
                     key={currentIndex}
@@ -133,6 +143,20 @@ export default function ServicesOverview() {
                     exit={{ opacity: 0, x: -30 }}
                     transition={{ duration: 0.5, ease: "easeOut" }}
                   >
+                    {/* Tag Badge */}
+                    {currentService.tag && (
+                      <motion.div
+                        initial={{ opacity: 0, y: -10 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ delay: 0.1 }}
+                        className="mb-4"
+                      >
+                        <span className={`inline-block px-3 py-1 rounded-full text-xs font-semibold text-white bg-gradient-to-r ${currentService.tagColor}`}>
+                          {currentService.tag}
+                        </span>
+                      </motion.div>
+                    )}
+
                     <motion.p
                       initial={{ opacity: 0, y: 10 }}
                       animate={{ opacity: 1, y: 0 }}
@@ -146,7 +170,7 @@ export default function ServicesOverview() {
                       initial={{ opacity: 0, y: 10 }}
                       animate={{ opacity: 1, y: 0 }}
                       transition={{ delay: 0.2 }}
-                      className="text-3xl md:text-4xl lg:text-5xl font-bold text-beelio-primary dark:text-beelio-bg mb-6 leading-tight"
+                      className="text-xl md:text-2xl lg:text-3xl font-bold text-beelio-primary dark:text-beelio-bg mb-4 leading-tight"
                     >
                       {currentService.title}
                     </motion.h2>
@@ -155,7 +179,7 @@ export default function ServicesOverview() {
                       initial={{ opacity: 0, y: 10 }}
                       animate={{ opacity: 1, y: 0 }}
                       transition={{ delay: 0.3 }}
-                      className="text-lg text-beelio-textSecondary dark:text-beelio-bg/80 mb-8 leading-relaxed max-w-xl"
+                      className="text-sm md:text-base text-beelio-textSecondary dark:text-beelio-bg/80 mb-6 leading-relaxed max-w-xl"
                     >
                       {currentService.description}
                     </motion.p>
@@ -167,7 +191,7 @@ export default function ServicesOverview() {
                     >
                       <Link
                         href={currentService.href}
-                        className="inline-flex items-center text-beelio-primary dark:text-beelio-accent font-bold text-lg hover:gap-3 transition-all group"
+                        className="inline-flex items-center text-beelio-primary dark:text-beelio-accent font-bold text-base hover:gap-3 transition-all group"
                       >
                         <span>Explore all</span>
                         <motion.span

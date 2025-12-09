@@ -70,7 +70,7 @@ export default function ManagedITPage() {
         </div>
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="max-w-3xl mx-auto text-center">
-            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-beelio-primary dark:text-beelio-bg mb-6">
+            <h1 className="text-xl md:text-2xl lg:text-3xl font-bold text-beelio-primary dark:text-beelio-bg mb-6">
               Managed IT Services
             </h1>
             <p className="text-xl text-beelio-textSecondary dark:text-beelio-bg/80">
@@ -83,7 +83,7 @@ export default function ManagedITPage() {
       <section className="py-20 bg-beelio-surface dark:bg-beelio-primaryDark">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl font-bold text-beelio-primary dark:text-beelio-bg mb-6">Overview</h2>
+            <h2 className="text-xl font-bold text-beelio-primary dark:text-beelio-bg mb-6">Overview</h2>
             <p className="text-lg text-beelio-textSecondary dark:text-beelio-bg/80 mb-4">
               Our Managed IT Services provide comprehensive, proactive management of your IT infrastructure. 
               We take care of the day-to-day operations, monitoring, maintenance, and support so you can focus 
@@ -127,7 +127,7 @@ export default function ManagedITPage() {
       <section className="py-20 bg-beelio-surface dark:bg-beelio-primaryDark">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl font-bold text-beelio-primary dark:text-beelio-bg mb-8">What&apos;s Included</h2>
+            <h2 className="text-xl font-bold text-beelio-primary dark:text-beelio-bg mb-8">What&apos;s Included</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               {features.map((feature, i) => (
                 <div key={i} className="flex items-start space-x-3">
@@ -143,7 +143,7 @@ export default function ManagedITPage() {
       <section className="py-20 bg-beelio-bg dark:bg-beelio-primary">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl font-bold text-beelio-primary dark:text-beelio-bg mb-8">Technologies We Use</h2>
+            <h2 className="text-xl font-bold text-beelio-primary dark:text-beelio-bg mb-8">Technologies We Use</h2>
             <div className="flex flex-wrap gap-3">
               {technologies.map((tech, i) => (
                 <span
@@ -206,7 +206,7 @@ export default function ManagedITPage() {
       <section className="py-20 bg-beelio-bg dark:bg-beelio-primary">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl font-bold text-beelio-primary dark:text-beelio-bg mb-8">Frequently Asked Questions</h2>
+            <h2 className="text-xl font-bold text-beelio-primary dark:text-beelio-bg mb-8">Frequently Asked Questions</h2>
             <div className="space-y-6">
               {[
                 {

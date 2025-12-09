@@ -45,7 +45,7 @@ export default function SectionHeader({
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
         transition={{ delay: 0.2, duration: 0.6, type: "spring" }}
-        className="text-3xl md:text-4xl lg:text-5xl font-extrabold text-beelio-primary dark:text-beelio-bg mb-6 leading-tight tracking-tight"
+        className="text-xl md:text-2xl lg:text-3xl font-extrabold text-beelio-primary dark:text-beelio-bg mb-6 leading-tight tracking-tight"
       >
         {title.split(" ").map((word, i) => (
           <motion.span
@@ -66,7 +66,7 @@ export default function SectionHeader({
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ delay: 0.4, duration: 0.6 }}
-          className="text-xl md:text-2xl text-beelio-textSecondary dark:text-beelio-bg/70 leading-relaxed max-w-3xl mx-auto font-normal"
+          className="text-sm md:text-base text-beelio-textSecondary dark:text-beelio-bg/70 leading-relaxed max-w-3xl mx-auto font-normal"
         >
           {description}
         </motion.p>
