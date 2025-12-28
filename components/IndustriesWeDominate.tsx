@@ -83,7 +83,7 @@ export default function IndustriesWeDominate() {
   const currentIndustry = industries[currentIndex]
 
   return (
-    <section className="py-24 md:py-32 bg-white dark:bg-beelio-primaryDark">
+    <section className="py-16 sm:py-20 md:py-24 lg:py-32 bg-white dark:bg-beelio-primaryDark">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Title */}
         <motion.div
@@ -91,7 +91,7 @@ export default function IndustriesWeDominate() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="text-center mb-16"
+          className="text-center mb-12 sm:mb-16"
         >
           <h2 className="text-xl md:text-2xl lg:text-3xl font-bold text-beelio-primary dark:text-beelio-bg">
             Industries we dominate
@@ -100,9 +100,9 @@ export default function IndustriesWeDominate() {
 
         {/* Industry Slideshow */}
         <div className="max-w-7xl mx-auto">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center min-h-[500px] md:min-h-[600px]">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8 lg:gap-12 items-center min-h-[400px] sm:min-h-[500px] md:min-h-[600px]">
             {/* Left Side - Image */}
-            <div className="relative h-[300px] md:h-[400px] lg:h-full order-2 lg:order-1 rounded-2xl overflow-hidden">
+            <div className="relative h-[250px] sm:h-[300px] md:h-[400px] lg:h-full order-2 lg:order-1 rounded-xl sm:rounded-2xl overflow-hidden">
               <AnimatePresence mode="wait">
                 <motion.div
                   key={currentIndex}
@@ -127,7 +127,7 @@ export default function IndustriesWeDominate() {
             </div>
 
             {/* Right Side - Content */}
-            <div className="flex flex-col justify-center order-1 lg:order-2">
+            <div className="flex flex-col justify-center order-1 lg:order-2 px-2 sm:px-0">
               <AnimatePresence mode="wait">
                 <motion.div
                   key={currentIndex}
@@ -173,7 +173,7 @@ export default function IndustriesWeDominate() {
                     initial={{ opacity: 0, y: 10 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ delay: 0.2 }}
-                    className="text-base md:text-lg text-beelio-textSecondary dark:text-beelio-bg/80 leading-relaxed"
+                    className="text-sm md:text-base text-beelio-textSecondary dark:text-beelio-bg/80 leading-relaxed"
                   >
                     {currentIndustry.description}
                   </motion.p>
@@ -183,10 +183,10 @@ export default function IndustriesWeDominate() {
           </div>
 
           {/* Navigation Controls */}
-          <div className="flex items-center justify-center gap-4 mt-12">
+          <div className="flex items-center justify-center gap-3 sm:gap-4 mt-8 sm:mt-12">
             <button
               onClick={prevSlide}
-              className="w-12 h-12 bg-beelio-surface dark:bg-beelio-primaryLight rounded-full flex items-center justify-center text-beelio-primary dark:text-beelio-bg hover:bg-beelio-accent hover:text-white transition-all shadow-md hover:scale-110"
+              className="w-11 h-11 sm:w-12 sm:h-12 bg-beelio-surface dark:bg-beelio-primaryLight rounded-full flex items-center justify-center text-beelio-primary dark:text-beelio-bg hover:bg-beelio-accent hover:text-white transition-all shadow-md hover:scale-110 min-w-[44px] min-h-[44px]"
               aria-label="Previous industry"
             >
               <ChevronLeft className="w-6 h-6" />
@@ -210,7 +210,7 @@ export default function IndustriesWeDominate() {
 
             <button
               onClick={nextSlide}
-              className="w-12 h-12 bg-beelio-accent hover:bg-beelio-accentDark rounded-full flex items-center justify-center text-white transition-all shadow-md hover:scale-110"
+              className="w-11 h-11 sm:w-12 sm:h-12 bg-beelio-accent hover:bg-beelio-accentDark rounded-full flex items-center justify-center text-white transition-all shadow-md hover:scale-110 min-w-[44px] min-h-[44px]"
               aria-label="Next industry"
             >
               <ChevronRight className="w-6 h-6" />

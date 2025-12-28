@@ -25,7 +25,7 @@ export default function CTABanner({
       : "bg-gradient-to-br from-beelio-primaryDark to-beelio-primary"
 
   return (
-    <section className={`${bgClass} py-20 md:py-28 relative overflow-hidden`}>
+    <section className={`${bgClass} py-16 sm:py-20 md:py-24 lg:py-28 relative overflow-hidden`}>
       {/* Decorative elements */}
       <div className="absolute inset-0 opacity-10">
         <div className="absolute top-0 left-0 w-96 h-96 bg-white rounded-full blur-3xl -translate-x-1/2 -translate-y-1/2" />
@@ -45,7 +45,7 @@ export default function CTABanner({
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.2 }}
-            className="text-xl md:text-2xl lg:text-3xl font-extrabold text-white mb-6 leading-tight tracking-tight"
+            className="text-xl md:text-2xl lg:text-3xl font-extrabold text-white mb-4 sm:mb-6 leading-tight tracking-tight px-2"
           >
             {title}
           </motion.h2>
@@ -55,7 +55,7 @@ export default function CTABanner({
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: 0.3 }}
-              className="text-white/95 text-sm md:text-base mb-10 leading-relaxed font-normal"
+              className="text-white/95 text-sm md:text-base mb-8 sm:mb-10 leading-relaxed font-normal px-2"
             >
               {description}
             </motion.p>

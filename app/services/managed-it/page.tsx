@@ -74,7 +74,7 @@ export default function ManagedITPage() {
             <h1 className="text-xl md:text-2xl lg:text-3xl font-bold text-beelio-primary dark:text-beelio-bg mb-6">
               Managed IT Services
             </h1>
-            <p className="text-xl text-beelio-textSecondary dark:text-beelio-bg/80">
+            <p className="text-sm md:text-base text-beelio-textSecondary dark:text-beelio-bg/80">
               Comprehensive IT management and support to keep your infrastructure running smoothly 24/7. Focus on your business while we handle your IT.
             </p>
           </div>
@@ -85,12 +85,12 @@ export default function ManagedITPage() {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-xl font-bold text-beelio-primary dark:text-beelio-bg mb-6">Overview</h2>
-            <p className="text-lg text-beelio-textSecondary dark:text-beelio-bg/80 mb-4">
+            <p className="text-sm md:text-base text-beelio-textSecondary dark:text-beelio-bg/80 mb-4">
               Our Managed IT Services provide comprehensive, proactive management of your IT infrastructure. 
               We take care of the day-to-day operations, monitoring, maintenance, and support so you can focus 
               on growing your business.
             </p>
-            <p className="text-lg text-beelio-textSecondary dark:text-beelio-bg/80">
+            <p className="text-sm md:text-base text-beelio-textSecondary dark:text-beelio-bg/80">
               With our team of certified professionals and advanced monitoring tools, we ensure your systems 
               are always running at peak performance, secure from threats, and ready to scale with your business needs.
             </p>

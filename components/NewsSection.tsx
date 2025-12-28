@@ -54,9 +54,9 @@ const categoryColors: Record<string, string> = {
 
 export default function NewsSection() {
   return (
-    <section className="py-20 bg-white dark:bg-beelio-primaryDark">
-      <div className="container mx-auto px-4">
-        <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-12">
+    <section className="py-16 sm:py-20 bg-white dark:bg-beelio-primaryDark">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-8 sm:mb-12">
           <SectionHeader
             title="Latest News & Insights"
             subtitle="Stay updated with our latest achievements and industry perspectives"
@@ -70,7 +70,7 @@ export default function NewsSection() {
           </Link>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 sm:gap-6">
           {newsArticles.map((article, index) => (
             <motion.article
               key={index}
@@ -113,12 +113,12 @@ export default function NewsSection() {
                     </div>
 
                     {/* Title */}
-                    <h3 className="text-lg font-bold text-beelio-primary dark:text-white mb-2 group-hover:text-beelio-accent transition-colors line-clamp-2">
+                    <h3 className="text-lg md:text-xl font-bold text-beelio-primary dark:text-white mb-2 group-hover:text-beelio-accent transition-colors line-clamp-2">
                       {article.title}
                     </h3>
 
                     {/* Excerpt */}
-                    <p className="text-sm text-beelio-textSecondary dark:text-beelio-lightGray mb-4 line-clamp-3 flex-grow">
+                    <p className="text-sm md:text-base text-beelio-textSecondary dark:text-beelio-lightGray mb-4 line-clamp-3 flex-grow">
                       {article.excerpt}
                     </p>
 
@@ -144,7 +144,7 @@ export default function NewsSection() {
         >
           <div className="flex items-center gap-2 mb-4">
             <TrendingUp className="w-5 h-5 text-beelio-accent" />
-            <h3 className="text-xl font-bold text-beelio-primary dark:text-white">
+            <h3 className="text-lg md:text-xl font-bold text-beelio-primary dark:text-white">
               Trending Topics
             </h3>
           </div>

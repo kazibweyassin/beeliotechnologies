@@ -100,7 +100,7 @@ export default function StatsSection() {
                   </div>
 
                   {/* Label */}
-                  <p className="text-lg text-beelio-lightGray font-medium">
+                  <p className="text-base md:text-lg text-beelio-lightGray font-medium">
                     {stat.label}
                   </p>
 
@@ -130,7 +130,7 @@ export default function StatsSection() {
               <div className="text-3xl md:text-4xl font-bold text-white mb-2">
                 {metric.value}
               </div>
-              <div className="text-sm text-beelio-lightGray">
+              <div className="text-sm md:text-base text-beelio-lightGray">
                 {metric.label}
               </div>
             </div>

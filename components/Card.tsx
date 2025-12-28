@@ -46,7 +46,7 @@ export default function Card({
           : undefined
       }
       className={cn(
-        "rounded-2xl p-6 transition-all duration-300 relative overflow-hidden group",
+        "rounded-xl sm:rounded-2xl p-5 sm:p-6 transition-all duration-300 relative overflow-hidden group",
         variants[variant],
         className
       )}

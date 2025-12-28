@@ -51,10 +51,10 @@ export default function GovernmentSolutions() {
             <span className="text-sm font-semibold">Government & Public Sector</span>
           </div>
           
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">
+          <h2 className="text-xl md:text-2xl lg:text-3xl font-bold mb-4">
             Government ICT Procurement & Supply
           </h2>
-          <p className="text-xl text-beelio-lightGray max-w-3xl mx-auto">
+          <p className="text-base md:text-lg text-beelio-lightGray max-w-3xl mx-auto">
             Trusted partner for government tenders, bids, and ICT equipment supply in Uganda and South Sudan
           </p>
         </motion.div>
@@ -75,8 +75,8 @@ export default function GovernmentSolutions() {
                 <div className="w-12 h-12 bg-gradient-to-br from-beelio-accent to-beelio-accentDark rounded-lg flex items-center justify-center mb-4">
                   <Icon className="w-6 h-6 text-white" />
                 </div>
-                <h3 className="text-lg font-bold mb-2">{service.title}</h3>
-                <p className="text-sm text-beelio-lightGray leading-relaxed">
+                <h3 className="text-lg md:text-xl font-bold mb-2">{service.title}</h3>
+                <p className="text-sm md:text-base text-beelio-lightGray leading-relaxed">
                   {service.description}
                 </p>
               </motion.div>
@@ -127,7 +127,7 @@ export default function GovernmentSolutions() {
           transition={{ duration: 0.6, delay: 0.6 }}
           className="text-center mt-12"
         >
-          <p className="text-lg mb-6">
+          <p className="text-base md:text-lg mb-6">
             Looking to partner with a reliable ICT supplier for your government project?
           </p>
           <Link

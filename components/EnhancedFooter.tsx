@@ -89,10 +89,10 @@ export default function EnhancedFooter() {
         >
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
             <div>
-              <h3 className="text-2xl md:text-3xl font-bold text-white mb-3">
+              <h3 className="text-xl md:text-2xl lg:text-3xl font-bold text-white mb-3">
                 Stay Updated
               </h3>
-              <p className="text-white/90 text-lg">
+              <p className="text-white/90 text-base md:text-lg">
                 Subscribe to our newsletter and receive the latest technology insights and updates delivered straight to your inbox.
               </p>
             </div>
@@ -132,7 +132,7 @@ export default function EnhancedFooter() {
                 />
               </div>
             </div>
-            <p className="text-beelio-lightGray text-sm mb-6 leading-relaxed">
+            <p className="text-sm md:text-base text-beelio-lightGray mb-6 leading-relaxed">
               Beelio Technologies is a leading African technology solutions provider, specializing in digital transformation, cloud services, and enterprise IT infrastructure.
             </p>
             

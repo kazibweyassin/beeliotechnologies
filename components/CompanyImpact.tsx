@@ -89,10 +89,10 @@ export default function CompanyImpact() {
           className="bg-white dark:bg-beelio-primary/30 rounded-2xl p-8 md:p-12 border border-gray-200 dark:border-white/10"
         >
           <div className="text-center mb-8">
-            <h3 className="text-2xl md:text-3xl font-bold text-beelio-primary dark:text-white mb-3">
+            <h3 className="text-xl md:text-2xl lg:text-3xl font-bold text-beelio-primary dark:text-white mb-3">
               Industry Certifications & Partnerships
             </h3>
-            <p className="text-beelio-textSecondary dark:text-beelio-lightGray max-w-2xl mx-auto">
+            <p className="text-sm md:text-base text-beelio-textSecondary dark:text-beelio-lightGray max-w-2xl mx-auto">
               We maintain the highest standards through rigorous certifications and strategic partnerships
             </p>
           </div>
@@ -125,10 +125,10 @@ export default function CompanyImpact() {
           className="mt-12 text-center"
         >
           <div className="bg-gradient-to-br from-beelio-accent to-beelio-accentDark rounded-2xl p-8 md:p-12 text-white">
-            <h3 className="text-2xl md:text-3xl font-bold mb-4">
+            <h3 className="text-xl md:text-2xl lg:text-3xl font-bold mb-4">
               Our Quality Policy
             </h3>
-            <p className="text-lg max-w-3xl mx-auto leading-relaxed">
+            <p className="text-base md:text-lg max-w-3xl mx-auto leading-relaxed">
               Beelio Technologies shall deliver ICT Solutions that add value to our customer&apos;s 
               operations, meet and exceed expectations, and deliver them right first time, every time.
             </p>

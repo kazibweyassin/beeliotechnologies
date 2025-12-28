@@ -48,10 +48,10 @@ export default function ServiceCard({
       >
         <Icon className="w-8 h-8 text-beelio-accent" />
       </motion.div>
-      <h3 className="text-xl font-bold text-beelio-primary dark:text-beelio-bg mb-3 group-hover:text-beelio-accent transition-colors tracking-tight">
+      <h3 className="text-lg md:text-xl font-bold text-beelio-primary dark:text-beelio-bg mb-3 group-hover:text-beelio-accent transition-colors tracking-tight">
         {title}
       </h3>
-      <p className="text-beelio-textSecondary dark:text-beelio-bg/80 mb-6 flex-grow leading-relaxed font-normal">
+      <p className="text-sm md:text-base text-beelio-textSecondary dark:text-beelio-bg/80 mb-6 flex-grow leading-relaxed font-normal">
         {description}
       </p>
       <Link

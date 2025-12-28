@@ -56,7 +56,7 @@ export default function ITConsultancyPage() {
             <h1 className="text-xl md:text-2xl lg:text-3xl font-bold text-beelio-primary dark:text-beelio-bg mb-6">
               IT Consultancy
             </h1>
-            <p className="text-xl text-beelio-textSecondary dark:text-beelio-bg/80">
+            <p className="text-sm md:text-base text-beelio-textSecondary dark:text-beelio-bg/80">
               Strategic IT consulting to help you make informed decisions and optimize your technology investments. 
               Expert guidance when you need it most.
             </p>
@@ -68,12 +68,12 @@ export default function ITConsultancyPage() {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-xl font-bold text-beelio-primary dark:text-beelio-bg mb-6">Overview</h2>
-            <p className="text-lg text-beelio-textSecondary dark:text-beelio-bg/80 mb-4">
+            <p className="text-sm md:text-base text-beelio-textSecondary dark:text-beelio-bg/80 mb-4">
               Making the right technology decisions is critical for business success. Our IT consultancy services 
               provide the strategic guidance and expert insights you need to navigate complex technology choices 
               and drive digital transformation.
             </p>
-            <p className="text-lg text-beelio-textSecondary dark:text-beelio-bg/80">
+            <p className="text-sm md:text-base text-beelio-textSecondary dark:text-beelio-bg/80">
               Whether you&apos;re planning a major technology initiative, evaluating vendors, or optimizing your IT 
               investments, our consultants bring deep expertise and industry knowledge to help you succeed.
             </p>

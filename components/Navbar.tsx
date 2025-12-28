@@ -57,13 +57,13 @@ export default function Navbar() {
       )}
     >
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-20">
+        <div className="flex items-center justify-between h-16 sm:h-20">
           {/* Logo */}
           <Link href="/" className="flex items-center group">
             <motion.div
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="relative w-20 h-20 flex items-center justify-center"
+              className="relative w-16 h-16 sm:w-20 sm:h-20 flex items-center justify-center"
             >
               <Image
                 src="/logo.png"
@@ -98,12 +98,6 @@ export default function Navbar() {
                       )}
                     >
                       {link.name}
-                      <span
-                        className={cn(
-                          "absolute -bottom-1 left-0 w-0 h-0.5 bg-beelio-accent transition-all duration-300 group-hover:w-full",
-                          pathname.startsWith(link.href) && "w-full"
-                        )}
-                      />
                     </Link>
                     <ChevronDown className={cn(
                       "w-4 h-4 transition-colors",
@@ -170,7 +164,7 @@ export default function Navbar() {
           {/* Mobile Menu Button */}
           <button
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-            className="lg:hidden p-2 rounded-lg hover:bg-beelio-bg dark:hover:bg-beelio-primaryLight transition-colors"
+            className="lg:hidden p-2.5 min-w-[44px] min-h-[44px] rounded-lg hover:bg-beelio-bg dark:hover:bg-beelio-primaryLight transition-colors flex items-center justify-center"
             aria-label="Toggle menu"
           >
             {isMobileMenuOpen ? (
@@ -191,7 +185,7 @@ export default function Navbar() {
             exit={{ opacity: 0, height: 0 }}
             className="lg:hidden bg-beelio-surface dark:bg-beelio-primaryDark border-t border-beelio-border"
           >
-            <div className="container mx-auto px-4 py-6 space-y-4">
+            <div className="container mx-auto px-4 py-6 space-y-2">
               {navLinks.map((link) => (
                 <div key={link.name}>
                   {link.submenu ? (
@@ -202,7 +196,7 @@ export default function Navbar() {
                             openSubmenu === link.name ? null : link.name
                           )
                         }
-                        className="flex items-center justify-between w-full text-left py-2"
+                        className="flex items-center justify-between w-full text-left py-3 min-h-[44px]"
                       >
                         <span className="font-normal">{link.name}</span>
                         <ChevronDown
@@ -238,7 +232,7 @@ export default function Navbar() {
                     <Link
                       href={link.href}
                       onClick={() => setIsMobileMenuOpen(false)}
-                      className="block py-2 font-normal"
+                      className="block py-3 min-h-[44px] flex items-center font-normal"
                     >
                       {link.name}
                     </Link>

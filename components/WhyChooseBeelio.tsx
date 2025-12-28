@@ -53,7 +53,7 @@ const values = [
 
 export default function WhyChooseBeelio() {
   return (
-    <section className="py-24 md:py-32 bg-beelio-surface dark:bg-beelio-primaryDark">
+    <section className="py-16 sm:py-20 md:py-24 lg:py-32 bg-beelio-surface dark:bg-beelio-primaryDark">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <SectionHeader
           title="Why Choose Beelio Technologies"
@@ -61,7 +61,7 @@ export default function WhyChooseBeelio() {
           description="What sets us apart in delivering exceptional IT solutions"
           centered
         />
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 lg:gap-10">
           {values.map((value, i) => {
             const Icon = value.icon
             return (
@@ -73,10 +73,10 @@ export default function WhyChooseBeelio() {
                 >
                   <Icon className="w-8 h-8 text-beelio-accent" />
                 </motion.div>
-                <h3 className="text-xl font-bold text-beelio-primary dark:text-beelio-bg mb-3">
+                <h3 className="text-lg md:text-xl font-bold text-beelio-primary dark:text-beelio-bg mb-3">
                   {value.title}
                 </h3>
-                <p className="text-beelio-textSecondary dark:text-beelio-bg/80 leading-relaxed">
+                <p className="text-sm md:text-base text-beelio-textSecondary dark:text-beelio-bg/80 leading-relaxed">
                   {value.description}
                 </p>
               </Card>

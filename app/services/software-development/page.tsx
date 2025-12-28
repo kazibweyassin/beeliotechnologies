@@ -69,7 +69,7 @@ export default function SoftwareDevelopmentPage() {
             <h1 className="text-xl md:text-2xl lg:text-3xl font-bold text-beelio-primary dark:text-beelio-bg mb-6">
               Software Development
             </h1>
-            <p className="text-xl text-beelio-textSecondary dark:text-beelio-bg/80">
+            <p className="text-sm md:text-base text-beelio-textSecondary dark:text-beelio-bg/80">
               Custom software solutions tailored to your business needs, from web apps to enterprise systems. 
               Built with modern technologies and best practices.
             </p>
@@ -81,11 +81,11 @@ export default function SoftwareDevelopmentPage() {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-xl font-bold text-beelio-primary dark:text-beelio-bg mb-6">Overview</h2>
-            <p className="text-lg text-beelio-textSecondary dark:text-beelio-bg/80 mb-4">
+            <p className="text-sm md:text-base text-beelio-textSecondary dark:text-beelio-bg/80 mb-4">
               Transform your business ideas into powerful software solutions. Our development team creates 
               custom applications that solve real business problems, improve efficiency, and drive growth.
             </p>
-            <p className="text-lg text-beelio-textSecondary dark:text-beelio-bg/80">
+            <p className="text-sm md:text-base text-beelio-textSecondary dark:text-beelio-bg/80">
               From concept to deployment, we follow agile methodologies and industry best practices to deliver 
               high-quality software on time and within budget.
             </p>

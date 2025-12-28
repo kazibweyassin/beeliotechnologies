@@ -74,7 +74,7 @@ export default function CloudSolutionsPage() {
             <h1 className="text-xl md:text-2xl lg:text-3xl font-bold text-beelio-primary dark:text-beelio-bg mb-6">
               Cloud Solutions
             </h1>
-            <p className="text-xl text-beelio-textSecondary dark:text-beelio-bg/80">
+            <p className="text-sm md:text-base text-beelio-textSecondary dark:text-beelio-bg/80">
               Scalable cloud infrastructure and migration services to modernize your business operations. 
               From AWS to Azure, we&apos;ve got you covered.
             </p>
@@ -86,12 +86,12 @@ export default function CloudSolutionsPage() {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-xl font-bold text-beelio-primary dark:text-beelio-bg mb-6">Overview</h2>
-            <p className="text-lg text-beelio-textSecondary dark:text-beelio-bg/80 mb-4">
+            <p className="text-sm md:text-base text-beelio-textSecondary dark:text-beelio-bg/80 mb-4">
               Transform your business with our comprehensive cloud solutions. We help organizations migrate 
               to the cloud, optimize existing cloud infrastructure, and leverage cloud-native technologies 
               for competitive advantage.
             </p>
-            <p className="text-lg text-beelio-textSecondary dark:text-beelio-bg/80">
+            <p className="text-sm md:text-base text-beelio-textSecondary dark:text-beelio-bg/80">
               Our team of cloud architects and engineers work with leading cloud providers including AWS, 
               Azure, and Google Cloud to deliver scalable, secure, and cost-effective solutions.
             </p>

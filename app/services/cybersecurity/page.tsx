@@ -76,7 +76,7 @@ export default function CybersecurityPage() {
             <h1 className="text-xl md:text-2xl lg:text-3xl font-bold text-beelio-primary dark:text-beelio-bg mb-6">
               Cybersecurity Services
             </h1>
-            <p className="text-xl text-beelio-textSecondary dark:text-beelio-bg/80">
+            <p className="text-sm md:text-base text-beelio-textSecondary dark:text-beelio-bg/80">
               Advanced security solutions to protect your business from threats and ensure compliance. 
               Multi-layered defense for complete protection.
             </p>
@@ -88,12 +88,12 @@ export default function CybersecurityPage() {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-xl font-bold text-beelio-primary dark:text-beelio-bg mb-6">Overview</h2>
-            <p className="text-lg text-beelio-textSecondary dark:text-beelio-bg/80 mb-4">
+            <p className="text-sm md:text-base text-beelio-textSecondary dark:text-beelio-bg/80 mb-4">
               In today&apos;s digital landscape, cybersecurity is not optional—it&apos;s essential. Our comprehensive 
               cybersecurity services protect your business from evolving threats while ensuring compliance 
               with industry regulations.
             </p>
-            <p className="text-lg text-beelio-textSecondary dark:text-beelio-bg/80">
+            <p className="text-sm md:text-base text-beelio-textSecondary dark:text-beelio-bg/80">
               We combine advanced security technologies with expert knowledge to create a defense-in-depth 
               strategy that protects your data, systems, and reputation.
             </p>

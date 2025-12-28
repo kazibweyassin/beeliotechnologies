@@ -98,7 +98,7 @@ export default function ServicesOverview() {
   const currentService = services[currentIndex]
 
   return (
-    <section className="py-24 md:py-32 bg-beelio-bg dark:bg-beelio-primaryDark relative overflow-hidden">
+    <section className="py-16 sm:py-20 md:py-24 lg:py-32 bg-beelio-bg dark:bg-beelio-primaryDark relative overflow-hidden">
       {/* Subtle background pattern */}
       <div className="absolute inset-0 opacity-5">
         <div className="absolute top-0 right-0 w-96 h-96 bg-beelio-accent rounded-full blur-3xl" />
@@ -109,9 +109,9 @@ export default function ServicesOverview() {
         <div className="max-w-7xl mx-auto">
           {/* Service Slideshow */}
           <div className="bg-white dark:bg-beelio-primary rounded-2xl md:rounded-3xl overflow-hidden shadow-2xl">
-            <div className="grid grid-cols-1 lg:grid-cols-2 min-h-[400px] md:min-h-[450px]">
+            <div className="grid grid-cols-1 lg:grid-cols-2 min-h-[350px] sm:min-h-[400px] md:min-h-[450px]">
               {/* Left Side - Image */}
-              <div className="relative h-[250px] md:h-[300px] lg:h-full order-2 lg:order-1">
+              <div className="relative h-[220px] sm:h-[250px] md:h-[300px] lg:h-full order-2 lg:order-1">
                 <AnimatePresence mode="wait">
                   <motion.div
                     key={currentIndex}
@@ -134,7 +134,7 @@ export default function ServicesOverview() {
               </div>
 
               {/* Right Side - Content */}
-              <div className="flex flex-col justify-center p-6 md:p-8 lg:p-10 order-1 lg:order-2">
+              <div className="flex flex-col justify-center p-5 sm:p-6 md:p-8 lg:p-10 order-1 lg:order-2">
                 <AnimatePresence mode="wait">
                   <motion.div
                     key={currentIndex}
@@ -244,29 +244,29 @@ export default function ServicesOverview() {
           </div>
 
           {/* Service Icons Grid - Below Slideshow */}
-          <div className="grid grid-cols-5 gap-4 mt-8">
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-3 sm:gap-4 mt-6 sm:mt-8">
             {services.map((service, index) => (
               <button
                 key={index}
                 onClick={() => goToSlide(index)}
-                className={`group flex flex-col items-center p-4 rounded-xl transition-all ${
+                className={`group flex flex-col items-center justify-center p-4 sm:p-5 rounded-xl transition-all duration-300 min-h-[100px] ${
                   currentIndex === index
-                    ? "bg-beelio-accent/10 dark:bg-beelio-accent/20 border-2 border-beelio-accent"
-                    : "bg-white/50 dark:bg-beelio-primaryLight/30 border-2 border-transparent hover:border-beelio-accent/50"
+                    ? "bg-beelio-accent/10 dark:bg-beelio-accent/20 border-2 border-beelio-accent shadow-lg scale-105"
+                    : "bg-white/50 dark:bg-beelio-primaryLight/30 border-2 border-transparent hover:border-beelio-accent/50 hover:bg-beelio-accent/5 dark:hover:bg-beelio-accent/10"
                 }`}
                 aria-label={`View ${service.title}`}
               >
                 <service.icon
-                  className={`w-6 h-6 mb-2 transition-colors ${
+                  className={`w-6 h-6 sm:w-7 sm:h-7 mb-2 sm:mb-3 transition-all duration-300 ${
                     currentIndex === index
-                      ? "text-beelio-accent"
-                      : "text-beelio-textSecondary dark:text-beelio-bg/70 group-hover:text-beelio-accent"
+                      ? "text-beelio-accent scale-110"
+                      : "text-beelio-textSecondary dark:text-beelio-bg/70 group-hover:text-beelio-accent group-hover:scale-110"
                   }`}
                 />
                 <span
-                  className={`text-xs font-medium text-center leading-tight ${
+                  className={`text-xs sm:text-sm font-semibold text-center leading-tight transition-colors duration-300 ${
                     currentIndex === index
-                      ? "text-beelio-accent"
+                      ? "text-beelio-accent font-bold"
                       : "text-beelio-textSecondary dark:text-beelio-bg/70 group-hover:text-beelio-primary dark:group-hover:text-beelio-accent"
                   }`}
                 >

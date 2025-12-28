@@ -45,10 +45,10 @@ export default function ProductCard({
       <span className="text-xs font-bold text-beelio-accent uppercase tracking-wider mb-2">
         {category}
       </span>
-      <h3 className="text-2xl font-bold text-beelio-primary dark:text-beelio-bg mb-3 group-hover:text-beelio-accent transition-colors">
+      <h3 className="text-lg md:text-xl font-bold text-beelio-primary dark:text-beelio-bg mb-3 group-hover:text-beelio-accent transition-colors">
         {title}
       </h3>
-      <p className="text-beelio-textSecondary dark:text-beelio-bg/80 mb-6 text-sm flex-grow leading-relaxed">
+      <p className="text-sm md:text-base text-beelio-textSecondary dark:text-beelio-bg/80 mb-6 flex-grow leading-relaxed">
         {description}
       </p>
       <Button href={href} variant="outline" className="w-full">

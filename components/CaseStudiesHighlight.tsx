@@ -64,10 +64,10 @@ export default function CaseStudiesHighlight() {
                     </div>
                   </div>
                 </div>
-                <h3 className="text-xl font-bold text-beelio-primary dark:text-beelio-bg mb-2">
+                <h3 className="text-lg md:text-xl font-bold text-beelio-primary dark:text-beelio-bg mb-2">
                   {study.title}
                 </h3>
-                <p className="text-beelio-textSecondary dark:text-beelio-bg/80 mb-4">
+                <p className="text-sm md:text-base text-beelio-textSecondary dark:text-beelio-bg/80 mb-4">
                   {study.description}
                 </p>
                 <div className="flex items-center justify-between">
@@ -75,7 +75,7 @@ export default function CaseStudiesHighlight() {
                     <div className="text-2xl font-bold text-beelio-accent">
                       {study.metrics.improvement}
                     </div>
-                    <div className="text-sm text-beelio-textSecondary dark:text-beelio-bg/80">
+                    <div className="text-sm md:text-base text-beelio-textSecondary dark:text-beelio-bg/80">
                       {study.metrics.metric} Improvement
                     </div>
                   </div>

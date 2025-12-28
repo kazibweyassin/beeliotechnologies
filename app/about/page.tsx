@@ -135,25 +135,25 @@ export default function AboutPage() {
             transition={{ duration: 0.6 }}
             className="max-w-4xl mx-auto mb-16"
           >
-            <h2 className="text-3xl md:text-4xl font-bold text-beelio-primary dark:text-white mb-8 text-center">
+            <h2 className="text-xl md:text-2xl lg:text-3xl font-bold text-beelio-primary dark:text-white mb-8 text-center">
               We are Championing the Digital Future of Africa
             </h2>
             
             <div className="prose prose-lg dark:prose-invert max-w-none text-beelio-textSecondary dark:text-beelio-lightGray space-y-6">
-              <p className="text-lg leading-relaxed">
+              <p className="text-sm md:text-base leading-relaxed">
                 Beelio Technologies is a Pan-African systems solutions company which specializes in a wide array 
                 of IT services including: communications and integration services, infrastructure services, 
                 managed and support services, cloud services, and software development.
               </p>
               
-              <p className="text-lg leading-relaxed">
+              <p className="text-sm md:text-base leading-relaxed">
                 As a leading provider of IT services across Africa, Beelio Technologies operates a firmly 
                 established partnership network which connects businesses, enterprises, governments, and 
                 consumers, utilizing value-added services to help them efficiently drive processes and improve 
                 across their respective activities.
               </p>
               
-              <p className="text-lg leading-relaxed">
+              <p className="text-sm md:text-base leading-relaxed">
                 With over a decade of immense contribution to the Information Communication and Technology 
                 Sector, Beelio Technologies has continuously remained a benchmark for excellence in Africa. 
                 We believe in and pursue an excellent service culture, and deliver our operations through 
@@ -161,7 +161,7 @@ export default function AboutPage() {
                 entire organization.
               </p>
               
-              <p className="text-lg leading-relaxed">
+              <p className="text-sm md:text-base leading-relaxed">
                 Over time, we have received numerous accolades from our partners, clients, customers, and 
                 professional bodies as a result of our service excellence and increased performance. We are 
                 committed to driving digital transformation and empowering businesses across Africa.
@@ -271,7 +271,7 @@ export default function AboutPage() {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="text-3xl md:text-4xl font-bold text-beelio-primary dark:text-white mb-12 text-center"
+            className="text-xl md:text-2xl lg:text-3xl font-bold text-beelio-primary dark:text-white mb-12 text-center"
           >
             A Timeline of Our History
           </motion.h2>
@@ -367,10 +367,10 @@ export default function AboutPage() {
             viewport={{ once: true }}
             className="max-w-4xl mx-auto text-center mb-12"
           >
-            <h2 className="text-3xl md:text-4xl font-bold text-beelio-primary dark:text-white mb-6">
+            <h2 className="text-xl md:text-2xl lg:text-3xl font-bold text-beelio-primary dark:text-white mb-6">
               We Are Pan African
             </h2>
-            <p className="text-lg text-beelio-textSecondary dark:text-beelio-lightGray leading-relaxed">
+            <p className="text-sm md:text-base text-beelio-textSecondary dark:text-beelio-lightGray leading-relaxed">
               Our footprint spans across multiple regions in Africa. Beelio Technologies provides 
               comprehensive IT solutions and partners with leading technology organizations to deliver 
               world-class services across the continent. We help our numerous clients address challenges 
@@ -429,7 +429,7 @@ export default function AboutPage() {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="text-3xl md:text-4xl font-bold text-beelio-primary dark:text-white mb-12 text-center"
+            className="text-xl md:text-2xl lg:text-3xl font-bold text-beelio-primary dark:text-white mb-12 text-center"
           >
             Mission, Vision & Values
           </motion.h2>
@@ -524,7 +524,7 @@ export default function AboutPage() {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6">
+            <h2 className="text-xl md:text-2xl lg:text-3xl font-bold text-white mb-6">
               Ready to Transform Your Business?
             </h2>
             <p className="text-xl md:text-2xl mb-10 max-w-2xl mx-auto text-white/90">

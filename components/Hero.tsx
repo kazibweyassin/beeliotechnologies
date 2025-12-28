@@ -1,10 +1,11 @@
 "use client"
 
 import { motion, AnimatePresence } from "framer-motion"
-import { useState, useEffect } from "react"
+import { useState, useEffect, useRef } from "react"
 import Button from "./Button"
 import Image from "next/image"
-import { ArrowRight, Play, Volume2 } from "lucide-react"
+import { ArrowRight, Play, Pause, Volume2 } from "lucide-react"
+// import { ArrowRight, Play, Volume2 } from "lucide-react" // Original without Pause
 
 const heroImages = [
   "/hero_banner_72c5560d49.png",
@@ -22,6 +23,7 @@ const stats = [
 export default function Hero() {
   const [currentSlide, setCurrentSlide] = useState(0)
   const [isPlaying, setIsPlaying] = useState(false)
+  // const audioRef = useRef<HTMLAudioElement>(null)
 
   // Auto-advance slides
   useEffect(() => {
@@ -31,6 +33,27 @@ export default function Hero() {
 
     return () => clearInterval(interval)
   }, [])
+
+  // Handle audio play/pause
+  // const toggleAudio = () => {
+  //   if (audioRef.current) {
+  //     if (isPlaying) {
+  //       audioRef.current.pause()
+  //     } else {
+  //       audioRef.current.play()
+  //     }
+  //     setIsPlaying(!isPlaying)
+  //   }
+  // }
+
+  // Handle audio ended
+  // useEffect(() => {
+  //   const audio = audioRef.current
+  //   if (audio) {
+  //     audio.addEventListener("ended", () => setIsPlaying(false))
+  //     return () => audio.removeEventListener("ended", () => setIsPlaying(false))
+  //   }
+  // }, [])
 
   const goToSlide = (index: number) => {
     setCurrentSlide(index)
@@ -66,9 +89,9 @@ export default function Hero() {
       </div>
 
       {/* Content Container */}
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10 min-h-screen flex flex-col pt-24 md:pt-32">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10 min-h-screen flex flex-col pt-20 sm:pt-24 md:pt-32">
         <div className="flex-1 flex items-center">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 w-full items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12 lg:gap-16 w-full items-center">
             {/* Left Side - Headline */}
             <motion.div
               initial={{ opacity: 0, x: -50 }}
@@ -112,7 +135,7 @@ export default function Hero() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 1.1 }}
-                className="text-base md:text-lg text-white/90 mb-10 max-w-xl leading-relaxed"
+                className="text-base md:text-lg text-white/90 mb-6 sm:mb-10 max-w-xl leading-relaxed"
               >
                 We have over two decades of immense contribution to the
                 Information Communication & Technology Sector across Africa.
@@ -150,11 +173,15 @@ export default function Hero() {
               className="flex justify-center lg:justify-end"
             >
               <div className="relative">
+                {/* Audio element */}
+                {/* <audio ref={audioRef} src="/audioile.mp3" preload="metadata" /> */}
+                
                 {/* Video/Story Card */}
                 <motion.div
                   whileHover={{ scale: 1.02 }}
-                  className="relative bg-white/10 backdrop-blur-md rounded-2xl p-8 border border-white/20 cursor-pointer group"
+                  className="relative bg-white/10 backdrop-blur-md rounded-2xl p-6 sm:p-8 border border-white/20 cursor-pointer group w-full max-w-md mx-auto lg:mx-0"
                   onClick={() => setIsPlaying(!isPlaying)}
+                  // onClick={toggleAudio}
                 >
                   <div className="flex items-center gap-4 mb-4">
                     <motion.div
@@ -162,6 +189,11 @@ export default function Hero() {
                       whileTap={{ scale: 0.95 }}
                       className="w-16 h-16 bg-beelio-accent rounded-full flex items-center justify-center group-hover:bg-beelio-accentDark transition-colors"
                     >
+                      {/* {isPlaying ? (
+                        <Pause className="w-6 h-6 text-white" fill="white" />
+                      ) : (
+                        <Play className="w-6 h-6 text-white ml-1" fill="white" />
+                      )} */}
                       <Play className="w-6 h-6 text-white ml-1" fill="white" />
                     </motion.div>
                     <div>
@@ -171,6 +203,7 @@ export default function Hero() {
                       <div className="flex items-center gap-2 text-white/70 text-sm">
                         <Volume2 className="w-4 h-4" />
                         <span>SOUND ON</span>
+                        {/* <span>{isPlaying ? "NOW PLAYING" : "SOUND ON"}</span> */}
                       </div>
                     </div>
                   </div>
@@ -224,7 +257,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 1.2 }}
-          className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8 py-12 border-t border-white/10"
+          className="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6 md:gap-8 py-8 sm:py-12 border-t border-white/10"
         >
           {stats.map((stat, i) => (
             <motion.div
@@ -236,7 +269,7 @@ export default function Hero() {
               className="text-center"
             >
               <motion.div
-                className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-beelio-accent mb-2"
+                className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold text-beelio-accent mb-2"
                 initial={{ scale: 0 }}
                 animate={{ scale: 1 }}
                 transition={{

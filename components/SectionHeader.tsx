@@ -25,7 +25,7 @@ export default function SectionHeader({
       viewport={{ once: true, margin: "-100px" }}
       transition={{ duration: 0.6, type: "spring", stiffness: 100 }}
       className={cn(
-        centered ? "text-center max-w-4xl mx-auto mb-16" : "mb-16",
+        centered ? "text-center max-w-4xl mx-auto mb-12 sm:mb-16" : "mb-12 sm:mb-16",
         className
       )}
     >
@@ -45,7 +45,7 @@ export default function SectionHeader({
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
         transition={{ delay: 0.2, duration: 0.6, type: "spring" }}
-        className="text-xl md:text-2xl lg:text-3xl font-extrabold text-beelio-primary dark:text-beelio-bg mb-6 leading-tight tracking-tight"
+        className="text-xl md:text-2xl lg:text-3xl font-extrabold text-beelio-primary dark:text-beelio-bg mb-4 sm:mb-6 leading-tight tracking-tight"
       >
         {title.split(" ").map((word, i) => (
           <motion.span
