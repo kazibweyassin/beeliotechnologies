@@ -64,10 +64,10 @@ export const metadata: Metadata = {
       "Beelio Technologies provides reliable IT infrastructure, security, and digital transformation for businesses across Africa.",
     images: [
       {
-        url: "/og-image.jpg",
+        url: "/logo.png",
         width: 1200,
         height: 630,
-        alt: "Beelio Technologies",
+        alt: "Beelio Technologies - Empowering Africa with Enterprise-Grade IT Solutions",
       },
     ],
   },
